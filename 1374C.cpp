@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+<<<<<<< HEAD
 #define ll long long
 using namespace std;
 
@@ -21,3 +22,24 @@ int main(){
     cin >> t; 
     while(t--) solve();
 }  
+=======
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;string s;
+        cin>>n>>s;
+        int res = 0 ;
+        int mx = -1;
+        for(int  i =0 ; i < n ; i++){
+            
+            if(s[i] == ')')
+                res++;
+            else res--;
+            mx = max(res ,mx);
+        }
+        cout<<mx<<endl;
+    }
+}
+>>>>>>> 8b14d078839a41b0b1e5e21b94b5cdd69163adc0
